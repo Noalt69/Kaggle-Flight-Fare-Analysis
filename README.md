@@ -3,38 +3,45 @@
 As a not financially comfortable college student, I want to build a model to predict the flight fares given (1) location, (2) time, and (3) destination. The core reason for this project is, besides being a solid Bachelor's level ML project, to predict the cheapest time that I can buy flight tickets to go back to Vietnam and see my parents. But that feature is still under development as I need to find a way to scrape real time data from Skyscanner. For now, I'm using a dataset that I found on Kaggle.
 
 # Goal
-Objective: Develop a ML model to predict flight fares.
-Benchmarking: The approach is benchmarked against existing solutions from top flight booking platforms (Google Flights, Skyscanner).
+- Objective: Develop a ML model to predict flight fares.
+- Benchmarking: The approach is benchmarked against existing solutions from top flight booking platforms (Google Flights, Skyscanner).
 
-# Dataset
-The Dataset used in this project contains information about flight details and prices.
+## Dataset
+
+The [Dataset](https://www.kaggle.com/datasets/nikhilmittal/flight-fare-prediction-mh/code?datasetId=140442&sortBy=dateCreated) used in this project contains information about flight details and prices. 
+
 Key features include:
 
-Airline: The airline operating the flight
-Source: The starting point of the flight
-Destination: The endpoint of the flight
-Duration: Total duration of the flight
-Total_Stops: Number of stops between the source and destination
-Additional_Info: Additional information about the flight
-Price: Price of the flight ticket
+- Airline: The airline operating the flight
+- Source: The starting point of the flight
+- Destination: The endpoint of the flight
+- Duration: Total duration of the flight
+- Total_Stops: Number of stops between the source and destination
+- Additional_Info: Additional information about the flight
+- Price: Price of the flight ticket
+  
+## Libraries Used
 
-# Python Libraries 
-Pandas & Numpy: For efficient data manipulation and numerical computations.
-Sklearn: For implementing and evaluating machine learning models.
-Matplotlib & Seaborn: For data visualization and graphical representation of insights.
+- pandas
+- matplotlib
+- seaborn
+- numpy
+- scikit-learn
+- xgboost
+- 
+## Models Used
 
-# Models Used
-Linear Regression
-ElasticNet
-Ridge Regression
-Lasso Regression
-Decision Tree Regressor
-Random Forest Regressor
-Gradient Boosting Regressor
-AdaBoost Regressor
-Support Vector Regressor (SVR)
-XGBoost Regressor
-
+- Linear Regression
+- ElasticNet
+- Ridge Regression
+- Lasso Regression
+- Decision Tree Regressor
+- Random Forest Regressor
+- Gradient Boosting Regressor
+- AdaBoost Regressor
+- Support Vector Regressor (SVR)
+- XGBoost Regressor
+- 
 # Results
 The models are evaluated based on their performance metrics: RMSE (Root Mean Squared Error) and R-squared score. The XGBoost Regressor is found to be the best-performing model for this dataset.
 
